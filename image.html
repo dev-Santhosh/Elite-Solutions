@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #svgContainer {
+            position: relative;
+        }
+
+        #svgContainer svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        #overlayHeading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #000; /* Set the color of the heading */
+            font-size: 24px; /* Set the font size of the heading */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="svgContainer">
+        <svg src width="200" height="100" viewBox="0 0 200 100">
+            <rect width="100%" height="100%" fill="#4285f4"/>
+            <!-- Other SVG elements go here -->
+        </svg>
+
+        <h1 id="overlayHeading">Your Heading Here</h1>
+    </div>
+</body>
+</html>
